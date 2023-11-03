@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Profile from "./profile";
-import About from './about';
+import About from "./about";
 
 const Unoptimized: React.FC = () => {
   const [counter, setCounter] = useState<number>(0);
@@ -9,12 +9,12 @@ const Unoptimized: React.FC = () => {
   };
   console.log("Unoptimized Rendered");
   return (
-    <div>
+    <div className="flex flex-col gap-2 p-2">
       <p>this is a unoptimized component</p>
       <p>{counter} from unoptimized</p>
       <button onClick={handleCounterIncrease}>Increase unoptimized counter</button>
       <Profile />
-      <About/>
+      <About />
     </div>
   );
 };

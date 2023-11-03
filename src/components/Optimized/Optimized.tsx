@@ -9,7 +9,7 @@ const Optimized: React.FC = () => {
   };
   console.log("Optimized Rendered");
   return (
-    <div>
+    <div className="flex flex-col gap-2 p-2">
       <p>this is a Optimized component</p>
       <p>{counter} from Optimized</p>
       <button onClick={handleCounterIncrease}>Increase Optimized counter</button>

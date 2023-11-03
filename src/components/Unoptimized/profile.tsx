@@ -8,7 +8,7 @@ const Profile: React.FC = () => {
 
   console.log("Unoptimized Profile Rendered");
   return (
-    <div className="border border-red">
+    <div className="border border-red flex flex-col gap-2 p-2">
       <p className="color-white">{counter} Unoptmized Profile</p>
       <button className="color-white" onClick={handleCounterIncrease}>
         Increate Profile Counter Unoptimized

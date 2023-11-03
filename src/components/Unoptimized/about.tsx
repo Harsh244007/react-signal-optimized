@@ -8,7 +8,7 @@ const About: React.FC = () => {
 
   console.log("Unoptimized About Rendered");
   return (
-    <div className="border border-red">
+    <div className="border border-red flex flex-col gap-2 p-2">
       <p className="color-white">{counter} Unoptmized About</p>
       <button className="color-white" onClick={handleCounterIncrease}>
         Increate About Counter Unoptimized

@@ -6,9 +6,9 @@ const Profile: React.FC = () => {
     setCounter(counter + 1);
   };
 
-  console.log("Unoptimized Profile Rendered");
+  console.log("Optimized Profile Rendered");
   return (
-    <div className="border border-red">
+    <div className="border border-red p-2 flex flex-col gap-2">
       <p className="color-white">{counter} Optimized Profile</p>
       <button className="color-white" onClick={handleCounterIncrease}>
         Increate Profile Counter Optimized
