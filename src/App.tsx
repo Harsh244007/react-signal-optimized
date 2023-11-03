@@ -1,13 +1,13 @@
+import React from "react";
+import { Optimized, Unoptimized } from "./components";
 
-
-const App=()=> {
-  
+const App: React.FC = () => {
   return (
-    <>
-  <p className="text-blue text-center text-2xl">Hello There</p>
-  <p className="text-blue text-center text-2xl">This is an template please add or remove files here.</p>
-    </>
-  )
-}
+    <main className="max-w-xl m-auto border border-red flex flex-wrap justify-center items-center p-4  gap-4">
+      <Unoptimized />
+      <Optimized />
+    </main>
+  );
+};
 
-export default App
+export default App;
